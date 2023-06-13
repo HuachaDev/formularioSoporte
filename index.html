@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = Rubik: wght @ 400; 700; 900 & display = swap "
+        rel=" stylesheet ">
+    <title>Form Zendesk</title>
+</head>
+
+<body>
+    <!-- <input id="btnModal" type="button" value="Soporte"> -->
+    <div class="container_wrapper ">
+        <div id=container_form>
+            <div class="header_form">
+                <div class="header_form_h1">
+                        <span>Contacto de Soporte</span>
+                    <div>
+                        <button id="btn-close" title="Contacto de Soporte">⨉</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="form_left">
+                    <div class="text_title">
+                        <p>Herramienta Soporte</p>
+                        <div class="div_icon">
+                            <a class="a_icon_mozilla"
+                                href="https://ftp.mozilla.org/pub/firefox/releases/81.0/win64/es-MX/Firefox Setup 81.0.exe">
+                                <div class="div_icon_img">
+                                    <img src="/media/newFirefox.png" alt="" height="35" width="35"
+                                        title="Firefox Win64">
+                                </div>
+                                <div class="sub_div_icon_firt">
+                                    <span>FIREFOX</span>
+                                    <span>Descargar aquí</span>
+                                </div>
+                            </a>
+                            <a class="a_icon_anydesk" href="https://download.anydesk.com/AnyDesk.exe">
+                                <div class="div_icon_img">
+                                    <img src="/media/newAnydesk.png" alt="" height="35" width="35">
+                                </div>
+                                <div class="sub_div_icon_firt">
+                                    <span> ANYDESK</span>
+                                    <span>Descargar aquí</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="body_support">
+                        <p>
+                            Principales Medios de contacto con Soporte
+                        </p>
+                        <a class="a_icon_whatsapp" target="_blank"
+                            href="https://api.whatsapp.com/send?phone=51964242451&text=Hola!%20Quisiera%20comunicarme%20con%20Soporte%20Mcets">
+                            <div class="div_icon">
+                                <div class="div_icon_img">
+                                    <img src="/media/newWhatsapp.png" alt="" height="35" width="35" title="Whatsapp">
+                                </div>
+                                <div class="sub_div_icon">
+                                    <span class="span_icon">SOPORTE WHATSAPP</span>
+                                    <span>+51 964 242 451</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="a_icon_mail" href="#">
+                            <div class="div_icon">
+                                <div class="div_icon_img">
+                                    <img src="/media/newMail.png" alt="" height="35" width="35">
+                                </div>
+                                <div class="sub_div_icon">
+                                    <span class="span_icon">CORREO ELECTRONICO</span>
+                                    <span>support@mcets.zendesk.com</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="a_icon_phone" href="#">
+                            <div class="div_icon">
+                                <div class="div_icon_img">
+                                    <img src="/media/newPhone.png" alt="" height="35" width="35">
+                                </div>
+                                <div class="sub_div_icon">
+                                    <span class="span_icon">LÍNEA TELEFÓNICA</span>
+                                    <span>(01)644 9189</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer_support">
+                        <p>Horarios de atención (GMT-5)</p>
+                        <p>Lunes a Viernes -> 07:00 am - 07:00 pm</p>
+                        <p>Sábado a Domingo -> 09:00 am - 07:00 pm via whatsapp / Email</p>
+                    </div>
+                </div>
+                <div class="form_right">
+                    <p class="">
+                        Completa el formulario con la siguiente información y le responderemos lo antes posible.
+                    </p>
+                    <div class="form">
+                        <form id="zFormer">
+                            <fieldset>
+                                <legend>Nombres</legend>
+                                <input type="text" value="" name="z_name" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Teléfono</legend>
+                                <input type="text" value="" name="z_phone_number" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Correo Electronico</legend>
+                                <input type="text" value="" name="z_requester" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Asunto</legend>
+                                <input type="text" value="" name="z_subject" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Mensaje</legend>
+                                <textarea name="z_description" id="z_description" rows="20" cols="50"></textarea>
+                            </fieldset>
+                            <div class="div_buttons">
+                                <label class="fileInput">
+                                    <input id="fileUpload" type="file" name="fileUpload[]" value="1000000" multiple />
+                                    <i><img src="/media/upload.png" alt="" height="20" width="20"></i>
+                                    <span class="span_file">SUBIR ARCHIVOS</span>
+                                </label>
+                                <input type="submit" value="ENVIAR" id="submitter" />
+                            </div>
+                            <div class="text_file_upload">
+                                <p id="text-file">NO EXISTEN ARCHIVOS CARGADOS</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
